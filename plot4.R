@@ -16,8 +16,7 @@ plot(a,data$voltage,type="l",xlab = "datetime",ylab="voltage")
 plot(a,data$sub_metering_1,type="l",xlab = "",ylab = "Energy_sub metering")
 points(a,data$sub_metering_2,type="l",col="red")
 points(a,data$sub_metering_3,type="l",col="blue")
-legend("topright",pch = "_",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),cex=0.5,xjust=0.5,yjust=1,bty="n")
-
+legend("topright",pch = "_",col=c("black","red","blue"),cex = .6,x.intersp = 2,pt.cex = 2,y.intersp = .2,xjust =0,yjust = 1, legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 plot(a,data$global_reactive_power,type="l",xlab = "datetime",ylab="Global_reactive_power")
 
 ##plot save
